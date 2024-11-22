@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de usuário</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Formulário de cadastro</h1>
+    <main class="form">
+      <form action="#conteudo" method="dialog">
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          <label for="">Nome: </label
+          ><input id="login" type="text" name="login" /><br /><br />
+          <label for="">Senha: </label
+          ><input id="senha" type="password" name="senha" /><br /><br />
+          <label for="">Data de nascimento: </label>
+          <input id="data" type="date" name="data" />
+        </fieldset>
+        <fieldset>
+          <legend>Contatos</legend>
+          <label for="">Telefone:</label>
+          <input id="telefone" type="number" name="telefone" /><br /><br />
+          <label for="">E-mail: </label
+          ><input id="email" type="email" name="email" /><br />
+        </fieldset>
+        <button class="botao" onclick="mostra('aparecer')">Salvar</button>
+      </form>
+    </main>
+    <div id="aparecer">
+      <table>
+        <caption>
+          Confira seus dados
+        </caption>
+      </table>
+    </div>
+    <script src="script.js"></script>
+    <div class="container">
+    <footer>&copy; 2024 Todos os direitos reservados</footer>
+  </div>
+  </body>
+</html>
